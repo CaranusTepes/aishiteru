@@ -1,0 +1,214 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&family=Lobster&family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
+body {
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topNav {
+  background-color: #B2CAD8;
+  overflow: hidden;
+  text-align: center;
+  height: auto;
+}
+
+.bi-heart-fill a:hover {
+  color: black;
+}
+
+.bi-heart-fill, .bi-layer-backward, .bi-layer-forward {
+  font-size: 30px;
+  color: #8A9DA3;
+}
+
+.bi-pencil-square, .bi-x-square-fill {
+  font-size: 30px;
+  color: #8A9DA3;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 100px;
+  padding: 30px;
+  font-family: 'Dela Gothic One', cursive;
+  color: black;
+}
+
+.subtitle {
+  font-size: 50px;
+  border-top: 10px dotted black;
+  padding: 30px;
+  font-family: 'Tangerine', cursive;
+}
+
+.letter-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 88vh;
+  margin: 20px;
+  padding: 10px;
+  gap: 10px 10px;
+  overflow: scroll;
+}
+
+.letter-box {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background-color: #BEC6C8;
+}
+
+.letter-title {
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  color: black;
+}
+
+.letter-author {
+  font-family: 'Arima Madurai', cursive;
+}
+
+.letter-creation {
+  font-family: 'Arima Madurai', cursive;
+}
+
+.change-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.topNavHeader {
+  background-color: #B2CAD8;
+  overflow: hidden;
+  text-align: center;
+  height: auto;
+}
+.show-container {
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+}
+
+.headers {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-title {
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+}
+
+.header-author {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 50px;
+}
+
+.header-created {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 30px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: #B2CAD8;
+  color: #545454;
+  height: auto;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.body-body {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+}
+
+.body-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.new-heading {
+  font-size: 70px;
+  color: black;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+
+.field {
+  text-align: center;
+  color: #545454;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Arima Madurai', cursive;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus {
+  border: 1px solid grey;
+}
+
+.one {
+  input {
+    height:200px;
+  }
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  input {
+    border: 2px solid;
+    width: 10vw;
+    background: #BEC6C8;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Arima Madurai', cursive;
+  }
+}

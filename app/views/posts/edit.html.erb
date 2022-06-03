@@ -1,0 +1,7 @@
+<div class="topNavHeader">
+  <a href=/posts><i class="bi bi-layer-backward"></i></a>
+  <a href="<%= post_path(@post) %>"><i class="bi bi-layer-forward"></i></a>
+</div>
+<div class="new-heading"> Edit a Letter </div>
+
+<%= render 'form', post: @post %>

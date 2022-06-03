@@ -1,0 +1,25 @@
+<div class="topNav">
+  <a href=/posts/new><i class="bi bi-heart-fill"></i></a>
+</div>
+
+<div class="main-container">
+  <div class="title-container">
+    <h1 class="title"> 愛してる </h1> 
+    <div class="subtitle"> Let your heart speak </div>
+  </div>
+  <div class="letter-container">
+    <% @posts.each do |post| %>
+    <div class="letter-box">
+      <%= link_to post do %>
+      <h2 class="letter-title"><%= post.title %></h2>
+      <% end %>
+      <h4 class="letter-author"> Sender: <%= post.author.blank? ? 'Anonymous' : post.author %></h4> <%# I used blank instead of nil/empty  %>
+      <h5 class="letter-creation"><%= post.created_at %></h5>
+      <div class="change-buttons">
+        <div class="edit-icon"><%= link_to '<i class="bi bi-pencil-square"></i>'.html_safe, edit_post_path(post) %></div>
+        <div class="delete-icon"><%= link_to '<i class="bi bi-x-square-fill"></i>'.html_safe, post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      </div>    
+    </div>
+    <% end %>
+  </div>
+</div>
